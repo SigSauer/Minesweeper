@@ -1,5 +1,6 @@
 package gui.menu;
 
+import files.SavedGame;
 import gui.general.GeneralLaunch;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -17,6 +18,9 @@ public class MenuController {
     private Button newGameButton;
 
     @FXML
+    private Button exitButton;
+
+    @FXML
     private void generalWindow() {
         System.out.println("New Window: General");
         try {
@@ -28,6 +32,17 @@ public class MenuController {
             System.err.println("New Window: false");
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    private void loadGame() {
+        SavedGame.contin = true;
+        generalWindow();
+    }
+
+    @FXML
+    private void exit() {
+        System.exit(0);
     }
 
 }
