@@ -6,16 +6,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="256.0" prefWidth="236.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.menu.MenuController">
+<AnchorPane prefHeight="256.0" prefWidth="236.0" style="-fx-background-color: gainsboro;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.menu.MenuController">
    <children>
       <Text fontSmoothingType="LCD" layoutX="44.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minesweeper" textAlignment="CENTER">
          <font>
             <Font size="25.0" />
          </font>
       </Text>
-      <Button fx:id="newGameButton" layoutX="45.0" layoutY="62.0" mnemonicParsing="false" onAction="#generalWindow" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="New Game" textFill="WHITE" />
-      <Button fx:id="loadGameButton" layoutX="44.0" layoutY="161.0" mnemonicParsing="false" onAction="#loadGame" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="Load Game" textFill="WHITE" />
-      <Button fx:id="gameSettingsButton" layoutX="45.0" layoutY="113.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="Game Settings" textFill="WHITE" />
-      <Button fx:id="exitButton" layoutX="44.0" layoutY="211.0" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="Exit" textFill="WHITE" />
+      <Button fx:id="newGameButton" layoutX="44.0" layoutY="74.0" mnemonicParsing="false" onAction="#generalWindow" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="New Game" textFill="WHITE" />
+      <Button fx:id="loadGameButton" layoutX="45.0" layoutY="136.0" mnemonicParsing="false" onAction="#loadGame" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="Load Game" textFill="WHITE" />
+      <Button fx:id="exitButton" layoutX="45.0" layoutY="199.0" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="Exit" textFill="WHITE" />
    </children>
 </AnchorPane>

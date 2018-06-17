@@ -183,7 +183,7 @@ public class GeneralController {
                 }
             }
         }
-        mineButton[X][Y].setStyle("-fx-text-fill: blue");
+        mineButton[X][Y].setStyle("-fx-text-fill: mediumblue");
         mineButton[X][Y].setText(String.valueOf(count));
         if(count == 0) addScore(1);
         else addScore(count);

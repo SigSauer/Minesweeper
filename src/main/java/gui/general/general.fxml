@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="426.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.general.GeneralController">
+<AnchorPane prefHeight="426.0" prefWidth="357.0" style="-fx-background-color: gainsboro;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.general.GeneralController">
    <children>
       <GridPane fx:id="mines" alignment="CENTER" gridLinesVisible="true" hgap="2.0" layoutX="19.0" layoutY="92.0" prefHeight="320.0" prefWidth="320.0" vgap="2.0">
         <columnConstraints>
@@ -32,9 +32,9 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <Button fx:id="backButton" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#menuWindow" prefHeight="31.0" prefWidth="60.0" text="Back" />
-      <Button fx:id="saveButton" layoutX="19.0" layoutY="53.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="135.0" text="Save Game" />
-      <Button fx:id="restartButton" layoutX="87.0" layoutY="14.0" mnemonicParsing="false" onAction="#restart" prefHeight="31.0" prefWidth="67.0" text="Restart" />
+      <Button fx:id="backButton" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#menuWindow" prefHeight="31.0" prefWidth="60.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="Back" textFill="WHITE" />
+      <Button fx:id="saveButton" layoutX="19.0" layoutY="53.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="Save Game" textFill="WHITE" />
+      <Button fx:id="restartButton" layoutX="87.0" layoutY="14.0" mnemonicParsing="false" onAction="#restart" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="Restart" textFill="WHITE" />
       <Text fx:id="scoreText" layoutX="246.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="92.6708984375">
          <font>
             <Font size="30.0" />
