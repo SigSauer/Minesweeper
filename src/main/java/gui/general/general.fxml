@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.shape.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -34,5 +35,15 @@
       <Button fx:id="backButton" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#menuWindow" prefHeight="31.0" prefWidth="60.0" text="Back" />
       <Button fx:id="saveButton" layoutX="19.0" layoutY="53.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="135.0" text="Save Game" />
       <Button fx:id="restartButton" layoutX="87.0" layoutY="14.0" mnemonicParsing="false" onAction="#restart" prefHeight="31.0" prefWidth="67.0" text="Restart" />
+      <Text fx:id="scoreText" layoutX="246.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="92.6708984375">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="timerText" layoutX="246.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="92.6708984375">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

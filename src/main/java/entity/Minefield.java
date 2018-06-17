@@ -34,17 +34,17 @@ public class Minefield {
         return field.length;
     }
 
-//    private int[][] getIntValue() {
-//        int[][] intField = new int[field.length][field.length];
-//        for (int i = 0; i < field.length; i++) {
-//            for (int j = 0; j < field.length; j++) {
-//                if(field[i][j]) {
-//                    intField[i][j] = 1;
-//                }else intField[i][j] = 0;
-//            }
-//        }
-//        return intField;
-//    }
+    private int[][] getIntValue() {
+        int[][] intField = new int[field.length][field.length];
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field.length; j++) {
+                if (field[i][j]) {
+                    intField[i][j] = 1;
+                } else intField[i][j] = 0;
+            }
+        }
+        return intField;
+    }
 
     public boolean[][] getField() {
         return field;
@@ -57,6 +57,18 @@ public class Minefield {
                 strValue += field[i][j]+"\t";
             }
             strValue += "\n";
+        }
+        return strValue;
+    }
+
+    public String toIntString() {
+        String strValue = "";
+        int[][] array = getIntValue();
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                strValue += array[i][j]+"\t";
+            }
+            strValue +="\n";
         }
         return strValue;
     }
